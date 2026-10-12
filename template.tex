@@ -108,6 +108,12 @@
 %    of these if writing a dissertation that includes equations.
 %  \usepackage{amsmath, amscd, amssymb, amsthm}
 
+%% BONUS MATH
+%  \usepackage{mathtools} 
+
+%% MARGIN REQUIREMENTS IN TITLES - Hyphenation in a Section Title does not always respect margin settings in Latex.  To force no hyphentation, uncomment the package below.
+%  \usepackage[raggedright]{titlesec} 
+
 %% GRAPHICX - This is the standard package for 
 %    including graphics for latex/pdflatex.
 \usepackage{scrextend}
@@ -126,6 +132,7 @@
 \usepackage{setspace}
 \doublespace
 \usepackage[font=small, width=0.9\textwidth]{caption}
+\usepackage[capposition=bottom]{floatrow} %force captions below figure per OGS requirement
 
 %% SUBFIG - Use this to place multiple images in a
 %    single figure.  Subfig will handle placement and
@@ -300,5 +307,7 @@ What to do about things \cite{Martin_1983}.  What did he say \cite{Rilling_Insel
 \bibliography{template}  %% This looks for the bibliography in template.bib 
 %                          which should be formatted as a bibtex file.
 %                          and needs to be separately compiled into a bbl file.
+\singlespace  %to force bibilography environment to use single spacing for each entry 
+              %double spacing between entries remains
 \end{document}
 
